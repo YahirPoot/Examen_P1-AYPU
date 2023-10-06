@@ -1,0 +1,138 @@
+/* Estilo general */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  /* Encabezado */
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Acciones */
+  .acciones {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  /* Sección de entrada */
+  #input-section {
+    margin-bottom: 1rem;
+    display: none;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  /* Sección de resultado */
+  #resultado {
+    margin-bottom: 1rem;
+  }
+  
+  /* Botón */
+  #ejecutar {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Animaciones */
+  .title {
+    animation: title-bounce 1s infinite ease-in-out;
+  }
+  
+  .acciones {
+    animation: acciones-fade-in 0.5s ease-in-out;
+  }
+  
+  #input-section {
+    animation: input-section-slide-in 0.5s ease-in-out;
+  }
+  
+  #resultado {
+    animation: resultado-slide-in 0.5s ease-in-out;
+  }
+  
+  #ejecutar {
+    animation: ejecutar-scale 0.5s ease-in-out;
+  }
+  
+  @keyframes title-bounce {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes acciones-fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes input-section-slide-in {
+    0% {
+      transform: translateY(-100px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes resultado-slide-in {
+    0% {
+      transform: translateY(-100px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes ejecutar-scale {
+    0% {
+      transform: scale(0.8);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital  El  Faro  del  Mayab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Hospital  El  Faro  del  Mayab</h1>
+        <div class="acciones">
+            <label for="opcion">Seleccione una opción:</label>
+            <select id="opcion">
+                <option value="1">Agregar paciente</option>
+                <option value="2">Buscar paciente por nombre</option>
+                <option value="3">Buscar paciente por diagnóstico</option>
+                <option value="4">Eliminar paciente por nombre</option>
+                <option value="5">Mostrar estadísticas</option>
+            </select>
+        </div>
+        <div id="input-section" style="display:none;">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad"><br>
+            <label for="genero">Género:</label>
+            <input type="text" id="genero"><br>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="text" id="telefono"><br>
+            <label for="diagnostico">Diagnóstico médico:</label>
+            <input type="text" id="diagnostico"><br>
+        </div>
+        <div id="resultado">
+        </div>
+        <button id="ejecutar">Ejecutar</button>
+
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</html>
